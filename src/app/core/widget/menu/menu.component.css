@@ -1,0 +1,21 @@
+.titreBar {
+  /*display: flex !important;*/
+  justify-content: center !important;
+  position: relative;
+  padding: 15px;
+  /*margin: 15px auto;*/
+
+}
+
+.divBar {
+  display: inline-block;
+  margin-left: 40%;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.logo {
+  width: 85px;
+  margin-top: -10px;
+  /*height: 35px;*/
+}

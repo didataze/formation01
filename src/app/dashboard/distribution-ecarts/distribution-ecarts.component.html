@@ -1,0 +1,26 @@
+<p-card [style]="{width: '100%', height: '590px'}">
+  <div class="divTitre">Graphique 3 : Distribution des Ecarts</div>
+
+  <div class="ui-g-8 ui-md-8 ui-lg-8" align="center">
+    <div class="myChartDiv">
+      <canvas id="cvsDistibution" width="1300px" height="500px"></canvas>
+    </div>
+  </div>
+
+  <div id="parent" class="ui-g-4 ui-md-4 ui-lg-4" align="center">
+    <div id="child">
+      <div>Paramétrer l’échelle de résultats</div>
+      <div></div>
+      <div class="ui-g-12 ui-md-12 ui-lg-12">
+        <div class="ui-g-5 ui-md-5 ui-lg-5 divRight"><input type="text" value="AAA"></div>
+        <div class="ui-g-2 ui-md-2 ui-lg-2 divMidle"> - 0</div>
+        <div class="ui-g-5 ui-md-5 ui-lg-5 divLeft"><input type="text" value="AAA"></div>
+        <div></div>
+        <div>
+          <button type="button" (click)="resetZoom()">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</p-card>

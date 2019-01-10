@@ -1,0 +1,60 @@
+<p-card [style]="{width: '100%'}">
+  <div class="divTitre">Importer les Données</div>
+  <div align="left">Importer des données (Capteurs ou Algorithme)</div>
+  <!--<div class="divUp">-->
+    <!--<p-fileUpload [style]="{width: '100%'}" name="demo[]" url="http://127.0.0.1:5000/uploader"-->
+                  <!--(onUpload)="onUpload($event)"-->
+                  <!--multiple="multiple" accept=".json,.txt,.pdf,.docx,image/*" maxFileSize="1000000"-->
+                  <!--chooseLabel="Parcourir"-->
+                  <!--uploadLabel="Importer"-->
+                  <!--cancelLabel="Annuler">-->
+      <!--<ng-template pTemplate="content">-->
+        <!--<ul *ngIf="uploadedFiles.length">-->
+          <!--<li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>-->
+        <!--</ul>-->
+      <!--</ng-template>-->
+    <!--</p-fileUpload>-->
+  <!--</div>-->
+  <div  class="divUp">
+    <form ngNoForm action="http://127.0.0.1:5000/uploader" method="POST"  target="_blank"
+          enctype="multipart/form-data">
+      <!--<p-button type="file" label="Parcourir" name="file"></p-button>-->
+      <input type="file" name="file"/>
+      <!--<input type="submit"/>-->
+      <p-button type="submit" label="Importer"></p-button>
+
+    </form>
+  </div>
+
+  <div class="divUp" align="left">
+    <p-card [style]="{width: '360px'}">
+      <div>Date Import Dernier Fichiers :</div>
+      <div>Données Capteurs : XX/XX/XXXX</div>
+      <div>Données Algorithme : YY/YY/YYYY</div>
+    </p-card>
+  </div>
+</p-card>
+
+<div class="divUp">
+  <p-card [style]="{width: '100%'}">
+
+    <div class="divTitre">Période Consultée</div>
+    <div class="divTitre">Du AA/AA/AAAA au BB/BB/BBBB</div>
+    <div>Note : La plage temporelle indiquée ci-dessous correspond à la plage temporelle couverte par les deux derniers
+      imports de fichiers capteur et algo
+    </div>
+  </p-card>
+</div>
+
+<div class="divUp">
+  <p-card [style]="{width: '100%', height: '120px'}">
+    <div class="ui-g-12 ui-md-12 ui-lg-12 divTitre" align="center">Période Affichée</div>
+    <div class="ui-g-2 ui-md-2 ui-lg-2" align="center">Date de Début :</div>
+    <div class="ui-g-2 ui-md-2 ui-lg-2" align="center"><input id="input" type="text" size="15" pInputText></div>
+    <div class="ui-g-2 ui-md-2 ui-lg-2" align="center">Date de Fin :</div>
+    <div class="ui-g-2 ui-md-2 ui-lg-2" align="center"><input id="input2" type="text" size="15" pInputText></div>
+    <div class="ui-g-4 ui-md-4 ui-lg-4" align="center">
+      <p-button label="Mettre à jour les graphiques"></p-button>
+    </div>
+  </p-card>
+</div>

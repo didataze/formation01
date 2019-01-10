@@ -1,0 +1,24 @@
+<p-card [style]="{width: '100%', height: '590px'}">
+  <div class="divTitre">Graphique 1 : Représentation données capteurs et algo</div>
+
+  <div class="ui-g-8 ui-md-12 ui-lg-8" align="center">
+    <div class="myChartDiv">
+      <canvas id="cvsRepresentation" width="1300px" height="500px"></canvas>
+    </div>
+    <p-button type="button" (click)="resetZoom()">Vue par défaut</p-button>
+  </div>
+
+  <div id="parent" class="ui-g-4 ui-md-12 ui-lg-4" align="center">
+    <div id="child">
+      <div>Détail de la mesure sélectionnée :</div>
+      <div class="ui-g-12 ui-md-12 ui-lg-12">
+        <div class="ui-g-6 ui-md-6 ui-lg-6 divMidle">Valeur :</div>
+        <div class="ui-g-6 ui-md-6 ui-lg-6 divRight"><input id="valeurMesure" type="text" size="30" pInputText></div>
+        <div class="ui-g-6 ui-md-6 ui-lg-6 divMidle">Date :</div>
+        <div class="ui-g-6 ui-md-6 ui-lg-6 divRight"><input id="valeurDate" type="text" size="30" pInputText></div>
+        <div class="ui-g-6 ui-md-6 ui-lg-6 divMidle">Heure :</div>
+        <div class="ui-g-6 ui-md-6 ui-lg-6 divRight"><input id="valeurHeur" type="text" size="30" pInputText></div>
+      </div>
+    </div>
+  </div>
+</p-card>

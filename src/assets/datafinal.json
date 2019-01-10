@@ -1,0 +1,60 @@
+{
+  "representation_capteur_algo": [
+    {
+      "sDate": "31/10/2016 16:59",
+      "capteur": 1.055,
+      "image": 1.175110509
+    },
+    {
+      "sDate": "31/10/2016 17:59",
+      "capteur": 1.054,
+      "image": 0.991329134
+    },
+    {
+      "sDate": "31/10/2016 18:59",
+      "capteur": 1.052,
+      "image": 1.009059274
+    },
+    {
+      "sDate": "31/10/2016 19:59",
+      "capteur": 1.052,
+      "image": 1.038201872
+    }
+  ],
+  "ecart_mesure": [
+    {
+      "sDate": "31/10/2016 16:59",
+      "ecart": 1.055
+    },
+    {
+      "sDate": "31/10/2016 17:59",
+      "ecart": 1.054
+    },
+    {
+      "sDate": "31/10/2016 18:59",
+      "ecart": 1.052
+    },
+    {
+      "sDate": "31/10/2016 19:59",
+      "ecart": 1.052
+    }
+  ],
+  "distribution_ecarts": [
+    {
+      "occurence": 60,
+      "ecart": 1.055
+    },
+    {
+      "occurence": 40,
+      "ecart": 1.054
+    },
+    {
+      "occurence": 70,
+      "ecart": 1.052
+    },
+    {
+      "occurence": 30,
+      "ecart": 1.052
+    }
+  ]
+}

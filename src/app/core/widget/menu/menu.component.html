@@ -1,0 +1,24 @@
+<p-toolbar>
+  <div class="titreBar">
+
+    <div class="ui-toolbar-group-left ui-toolbar">
+      <div class="logo">
+        <img #img src="assets/edf.svg" alt="Logo">
+      </div>
+    </div>
+
+    <div class="ui-toolbar-group-right">
+      <!--<button pButton type="button" label="Liste des documents" icon="pi pi-search" class="ui-button-warning"-->
+        <!--[routerLink]="['/demonstrator/list']" routerLinkActive="active-link"></button>-->
+      <!--<i class="pi pi-bars"></i>-->
+      <!--<button pButton type="button" label="Tableau de bord" icon="pi pi-calendar" class="ui-button-success"-->
+        <!--[routerLink]="['/dashboard/global']"></button>-->
+      <!--<i class="pi pi-bars"></i>-->
+      <button pButton type="button" (click)="logout()" icon="pi pi-times" label="Déconnecter"
+        [routerLink]="['/login']" class="ui-button-danger"></button>
+    </div>
+
+    <div class="divBar">Niv-Eau</div>
+
+  </div>
+</p-toolbar>

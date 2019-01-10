@@ -1,0 +1,42 @@
+<div class="ui-g styleCenter">
+  <div class="ui-g-12 ui-sm-12 ui-md-offset-4 ui-lg-offset-4">
+
+    <p-panel [style]="{width: '440px'}" styleClass="ui-card-shadow">
+      <p-header>
+        <div class="logo divBar"><img #img src="assets/edf.svg" alt="Logo"></div>
+        <div class="ui-helper-clearfix  titreBar">
+          <span class="ui-panel-title" style="font-size:16px;display:inline-block;margin-top:2px">Niv-Eau</span>
+        </div>
+      </p-header>
+
+      <h4 class="erreurMsg">{{message}}</h4>
+      <div class="ui-g-12 ui-sm-12 ui-lg-12 ui-md-12"></div>
+
+      <form #loginForm="ngForm">
+        <div style="height: 150px">
+          <div class="ui-g-4 ui-lg-4 ui-md-6 ui-md-offset-1 ui-lg-offset-1">
+            <label for="name">Login</label>
+          </div>
+          <div class="ui-g-8  ui-lg-6 ui-md-6">
+            <input type="text" id="name" [(ngModel)]="name" name="name" required>
+          </div>
+
+          <div class="ui-g-4 ui-lg-4 ui-md-6 ui-md-offset-1 ui-lg-offset-1">
+            <label for="password">Mot de passe</label>
+          </div>
+          <div class="ui-g-4 ui-lg-4 ui-md-6">
+            <input type="password" id="password" [(ngModel)]="password" name="password" required>
+          </div>
+        </div>
+      </form>
+
+      <p-footer class="footer">
+        <div>
+          <button pButton type="button" (click)="login()" label="Se connecter" icon="pi pi-check"
+                  class="ui-button-success" style="margin-right: .25em"></button>
+        </div>
+      </p-footer>
+    </p-panel>
+
+  </div>
+</div>

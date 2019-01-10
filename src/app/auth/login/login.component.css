@@ -1,0 +1,27 @@
+.styleCenter {
+  margin-top: 150px;
+}
+
+.erreurMsg {
+  margin-left: 20px;
+  font-weight: bold;
+  color: #da6211 !important;
+}
+
+.footer {
+  text-align: right  !important;
+}
+
+.logo {
+  width: 50px;
+  height: 10px;
+}
+
+.divBar {
+  display: inline-block;
+}
+
+.titreBar {
+  display: inline-block;
+  padding: 10px;
+}

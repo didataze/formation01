@@ -1,0 +1,13 @@
+.styleCenter {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.footer {
+  background: #2191c0;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 10px;
+}
